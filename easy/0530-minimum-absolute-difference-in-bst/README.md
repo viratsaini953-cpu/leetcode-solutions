@@ -39,8 +39,8 @@ Output: 1
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 25.4 MB (beats 63.61%)  
-**Submitted:** 2026-10-31T04:24:25.992Z  
+**Memory:** 25.5 MB (beats 63.61%)  
+**Submitted:** 2026-10-31T04:25:02.510Z  
 
 ```cpp
 /**
@@ -62,6 +62,7 @@ public:
         if(root==NULL){
             return INT_MAX;
         }
+        
         if(root->left!=NULL){
             int leftv=getMinimumDifference(root->left);
             ans=min(ans,leftv);
