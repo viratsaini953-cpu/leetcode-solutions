@@ -17,6 +17,7 @@ public:
         if(root==NULL){
             return INT_MAX;
         }
+        
         if(root->left!=NULL){
             int leftv=getMinimumDifference(root->left);
             ans=min(ans,leftv);
