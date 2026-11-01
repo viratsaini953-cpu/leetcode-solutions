@@ -1,0 +1,66 @@
+# Merge Two Binary Trees
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
+
+## Problem
+
+You are given two binary trees `root1` and `root2`.
+
+Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.
+
+Return *the merged tree*.
+
+**Note:** The merging process must start from the root nodes of both trees.
+
+ 
+
+**Example 1:**
+
+```
+Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+Output: [3,4,5,5,4,null,7]
+
+```
+
+**Example 2:**
+
+```
+Input: root1 = [1], root2 = [1,2]
+Output: [2,2]
+
+```
+
+ 
+
+**Constraints:**
+
+- The number of nodes in both trees is in the range [0, 2000].
+- -104 <= Node.val <= 104
+
+## Solution
+
+**Language:** C++  
+**Runtime:** 2 ms (beats 16.72%)  
+**Memory:** 33.5 MB (beats 30.27%)  
+**Submitted:** 2026-11-01T12:33:11.053Z  
+
+```cpp
+class Solution {
+public:
+    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
+        if(root1 == NULL) return root2;
+        if(root2 == NULL) return root1;
+
+        TreeNode* root = new TreeNode(root1->val + root2->val);
+
+        root->left = mergeTrees(root1->left, root2->left);
+        root->right = mergeTrees(root1->right, root2->right);
+
+        return root;
+    }
+};
+```
+
+---
+
+[View on LeetCode](https://leetcode.com/problems/merge-two-binary-trees/)
