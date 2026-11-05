@@ -43,9 +43,9 @@ Explanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0).
 ## Solution
 
 **Language:** C++  
-**Runtime:** 5 ms (beats 94.43%)  
+**Runtime:** 9 ms (beats 74.94%)  
 **Memory:** 14 MB (beats 45.57%)  
-**Submitted:** 2026-11-05T20:54:21.218Z  
+**Submitted:** 2026-11-05T20:57:06.611Z  
 
 ```cpp
 class Solution {
@@ -77,8 +77,12 @@ public:
                 }
             }
         }
-        if (d == INT_MAX) return c;
-        if (c == INT_MIN) return d;
+        if(d==INT_MAX){
+            return c;
+        }
+        if(c==INT_MIN){
+            return d;
+        }
         int s = abs(d - target);
         int v = abs(c - target);
         if(s<v){
