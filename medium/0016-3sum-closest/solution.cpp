@@ -27,7 +27,7 @@ public:
                 }
             }
         }
-         if (d == INT_MAX) return c;
+        if (d == INT_MAX) return c;
         if (c == INT_MIN) return d;
         int s = abs(d - target);
         int v = abs(c - target);
