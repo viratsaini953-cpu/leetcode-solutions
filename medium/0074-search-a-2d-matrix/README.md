@@ -15,6 +15,8 @@ You must write a solution in `O(log(m * n))` time complexity.
 
  
 
+Original
+C++
 **Example 1:**
 
 ```
@@ -44,8 +46,8 @@ Output: false
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 13.3 MB (beats 37.53%)  
-**Submitted:** 2026-11-09T14:36:18.745Z  
+**Memory:** 13.2 MB (beats 91.48%)  
+**Submitted:** 2026-11-13T13:58:09.597Z  
 
 ```cpp
 class Solution {
