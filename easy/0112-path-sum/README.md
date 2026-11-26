@@ -53,7 +53,7 @@ Explanation: Since the tree is empty, there are no root-to-leaf paths.
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 21.4 MB (beats 39.21%)  
-**Submitted:** 2026-11-26T10:51:09.591Z  
+**Submitted:** 2026-11-26T10:53:21.214Z  
 
 ```cpp
 /**
