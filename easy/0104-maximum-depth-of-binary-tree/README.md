@@ -36,9 +36,9 @@ Output: 2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 22.2 MB (beats 19.56%)  
-**Submitted:** 2026-11-26T09:53:35.412Z  
+**Runtime:** 1 ms (beats 19.29%)  
+**Memory:** 22.3 MB (beats 19.56%)  
+**Submitted:** 2026-11-26T09:58:12.848Z  
 
 ```cpp
 /**
