@@ -36,9 +36,9 @@ Output: 2
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 19.29%)  
-**Memory:** 22.3 MB (beats 19.56%)  
-**Submitted:** 2026-11-26T09:58:12.848Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 22.1 MB (beats 77.76%)  
+**Submitted:** 2026-11-26T10:10:26.176Z  
 
 ```cpp
 /**
@@ -58,13 +58,9 @@ public:
         if(root==NULL){
             return 0;
         }
-        if(root->left==NULL){
-            return maxDepth(root->right)+1;
-        }
-        if(root->right==NULL){
-            return maxDepth(root->left)+1;
-        }
-        return max(maxDepth(root->left),maxDepth(root->right))+1;
+        int left=maxDepth(root->left);
+        int right=maxDepth(root->right);
+        return max(left,right)+1;
     }
 };
 ```
