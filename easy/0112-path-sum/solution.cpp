@@ -21,7 +21,10 @@ public:
         sum += root->val;
 
         if(root->left == NULL && root->right == NULL){
-            bool ans = (sum == targetSum);
+            bool ans=false;;
+            if(sum==targetSum){
+                ans=true;
+            }
             sum -= root->val;
             return ans;
         }
