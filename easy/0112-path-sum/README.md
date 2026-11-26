@@ -52,8 +52,8 @@ Explanation: Since the tree is empty, there are no root-to-leaf paths.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 21.6 MB (beats 15.79%)  
-**Submitted:** 2026-11-26T10:50:33.938Z  
+**Memory:** 21.4 MB (beats 39.21%)  
+**Submitted:** 2026-11-26T10:51:09.591Z  
 
 ```cpp
 /**
@@ -79,7 +79,10 @@ public:
         sum += root->val;
 
         if(root->left == NULL && root->right == NULL){
-            bool ans = (sum == targetSum);
+            bool ans=false;;
+            if(sum==targetSum){
+                ans=true;
+            }
             sum -= root->val;
             return ans;
         }
